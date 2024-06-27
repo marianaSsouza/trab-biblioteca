@@ -1,18 +1,52 @@
-## Getting Started
+## Livraria May
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+(exibe mensagem para o user, pedindo para ele informar um a opção no menu )
 
-## Folder Structure
+    <<---------menu-------->> 
+    Bem vindo a livraria da may! selecione uma opcao para continuar:
 
-The workspace contains two folders by default, where:
+    1. livros disponiveis
+    2. categria de livros
+    3. preço
+    4. sugestão da vendedora
+    5. livros adicionados no carrinho
+    6. finalizar compra
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+(usuario informou): 1
+> aqui será mostrado as opções de livros disponiveis 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+#menu volta a ser mostrado#
 
-## Dependency Management
+(usuario informou): 2
+> na aba de categorias, será exposto todos os generos literarios disponiveis
+> ao escolher a opção "categoria de livros", será mostrado:
+"> ficção"
+"> ação"
+"> romance"
+"> ciência"
+"> filosofia"
+"> terror"
+"> suspense"
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+(usuario informou): terror
+
+> mostra todos os opções de livros da categoria terror, mostrando o titulo e seu preço
+
+#menu volta a ser mostrado#
+
+(usuario informou): 3
+> nele terá uma mensagem apresentando qual é o livro mais caro e qual é o mais barato
+
+#menu volta a ser mostrado#
+
+(usuario informou): 4 
+> aqui sera sugerido de forma aleatoria um livro 
+ escolha uma categoria para gerar o livro aleatorio
+
+
+#menu volta a ser mostrado#
+
+(usuario informou): 5
+> será mos
+

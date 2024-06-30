@@ -22,8 +22,6 @@
 > na aba de categorias, será exposto todos os generos literarios disponiveis
 > ao escolher a opção "categoria de livros", será mostrado:
 "> ficção"
-"> ação"
-"> romance"
 "> ciência"
 "> filosofia"
 "> terror"
@@ -48,5 +46,16 @@
 #menu volta a ser mostrado#
 
 (usuario informou): 5
-> será mos
+> user irá informar o codigo do livro e será adiconado ao carrinho
+
+
+#menu volta a ser mostrado
+
+(usuario informou): 6
+> será mostrado todos os livros adicionados no carrinho
+
+#menu volta a ser mostrado
+
+(usuario informou): 7
+> mostrará o total da compra, os livros e seá aplicado um desconfto de 10% no vaor total.
 

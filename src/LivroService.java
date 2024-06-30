@@ -4,19 +4,6 @@ import java.util.Scanner;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-/*
-        * -------------menu--------------
-        * Bem vindo a livraria da may! selecione uma opcao para continuar:
-        * 
-        * 1. livros disponiveis
-        * 2. categria de livros
-        * 3. preço
-        * 4. sugestão da vendedora
-        * 5. adicionar livros
-        * 6. livros adicionados no carrinho
-        * 7. finalizar compra
-        * 
-        */
 
 public class LivroService {
 
@@ -32,10 +19,7 @@ public class LivroService {
     // metodo para mostrar livros na categoria escolhida
     public void buscarCategoriaPorNome(List<Livro> livros, String categoria) {
 
-        
-
-
-        System.out.println("categoria de livros: ");
+           System.out.println("categoria de livros: ");
 
         List<Livro> livrosPorCategoria = livros.stream()
                 .filter(livro -> livro.categoria.equalsIgnoreCase(categoria))

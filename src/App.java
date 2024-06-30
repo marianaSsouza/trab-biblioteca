@@ -16,12 +16,12 @@ public class App {
 
         /// lista com todos os livros
         List<Livro> livros = new ArrayList<Livro>();
-        livros.add(new Livro("livro1", "ficção", 20.0));
+        livros.add(new Livro("livro1", "ficção", 30.0));
         livros.add(new Livro("livro3", "ação", 20.0));
         livros.add(new Livro("livro4", "ciência", 20.0));
         livros.add(new Livro("livro4", "filosofia", 20.0));
         livros.add(new Livro("livro5", "terror", 20.0));
-        livros.add(new Livro("livro2", "suspense", 20.0));
+        livros.add(new Livro("livro2", "suspense", 10.0));
 
         // lista para o carrinho de compras
         List<Livro> carrinho = new ArrayList<>();
@@ -57,17 +57,19 @@ public class App {
                     break;
 
                 case 5: /// adicionar livros
-                    Livro novoLivro = interacao.adicionarLivro();
-                    carrinho.add(novoLivro);
+                    livrosInfo.livrosDisponiveis(livros);
+                    System.out.println("Informe o código do livro que deseja adicionar: ");
+                    int codigoInformado = leitor.nextInt();
+                    carrinho.add(livros.get(codigoInformado-1));
                     System.out.println("Perfeito, o livro foi adicionado no carrinho!");
                     break;
 
                 case 6: // mostrar livros adicionados no carrinho
-                    livrosInfo.mostrarLivrosNoCarrinho(livros);
+                    livrosInfo.mostrarLivrosNoCarrinho(carrinho);
                     break;
 
                 case 7: // finalizar compra e aplicar desconto
-                    finalizar.finalizarCompra(livros, 10d);
+                    finalizar.finalizarCompra(carrinho, 10d);
                     break;
 
                 default:
@@ -79,19 +81,7 @@ public class App {
 
         leitor.close();
 
-        /*
-         * -------------menu--------------
-         * Bem vindo a livraria da may! selecione uma opcao para continuar:
-         * 
-         * 1. livros disponiveis
-         * 2. categria de livros
-         * 3. preço dos livros
-         * 4. sugestão da vendedora
-         * 5. adicionar livros
-         * 6. livros adicionados no carrinho
-         * 7. finalizar compra
-         * 
-         */
+       
 
     }
 }
